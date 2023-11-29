@@ -1,0 +1,132 @@
+body, html {
+  height: 100%;
+  width: auto;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333; /* Assuming a dark background as per the screenshot */
+}
+
+.container {
+  display: flex; /* Set the container to use Flexbox */
+  align-items: center; /* Align vertically */
+  justify-content: center; /* Align horizontally */
+  width: auto; /* Adjust the width as necessary */
+  height: auto;
+  margin: 5% auto;
+  padding: 2%;
+  background-color: #222; /* Dark theme for the container */
+  color: white;
+  border-radius: 8px;
+}
+
+#Login-pic, .signup-form {
+  flex: 1; /* コンテナのスペースを均等に分ける */
+  display: flex;
+  justify-content: center; /* 中央寄せ */
+  align-items: center; /* 縦方向の中央寄せ */
+  padding: 20px; /* 内側の余白 */
+}
+
+#Login-pic {
+  background-size: cover; /* 背景画像がコンテナをカバーするように */
+}
+
+.signup-form {
+  /* その他のスタイリング */
+  display: flex; /* Flexboxを有効化 */
+  flex-direction: column; /* 子要素を縦に並べる */
+  justify-content: flex-start; /* 上から順に配置 */
+  align-items: center; /* 中央寄せ */
+  text-align: center; /* テキストを中央揃えに */
+  padding: 20px; /* 内側の余白 */
+}
+
+/* フォーム内のテキストとインプットボックスのスタイリング */
+#signupForm input{
+  width: 468px;
+  height: 48px;
+}
+#signupForm p {
+  text-align: left;
+  width: 468px;
+  height: 16px;
+  margin: 15px 0; /* テキストの上下のマージン */
+  /* 必要に応じて他のスタイリングを追加 */
+}
+
+.form-input {
+  width: 100%; /* 入力フィールドを親要素の幅いっぱいに */
+}
+#submit button {
+  width: 100%; /* ボタンを親要素の幅いっぱいに */
+  /* その他のスタイリングは既に指定されている */
+}
+
+
+
+#Login-pic img {
+  width: 80%; /* Adjust as necessary */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #333;
+  color: white;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #C8C83C; /* Sign-up button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: C8C83C; /* Darker shade for hover effect */
+}
+
+.sign-in-link {
+  display: block;
+  color: #aaa;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Additional styles for layout adjustments and responsiveness */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Stack the elements vertically on smaller screens */
+  }
+  .login-pic, .signup-form {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+}
